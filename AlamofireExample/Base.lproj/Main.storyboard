@@ -192,6 +192,13 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="MailLabel" destination="LWm-cg-Bba" id="K6H-9Y-FaP"/>
+                        <outlet property="NameLabel" destination="fdX-4A-RtA" id="bGd-px-nK8"/>
+                        <outlet property="idLabel" destination="NGB-rK-SPi" id="Uzt-G0-hEA"/>
+                        <outlet property="imageView" destination="7gK-Wj-k9g" id="wyz-4V-ZDP"/>
+                        <outlet property="locationLabel" destination="BI7-wy-kmW" id="kOG-9d-A5o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMa-WL-zf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

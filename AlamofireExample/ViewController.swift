@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         self.TableVieq.dataSource = self
         self.TableVieq.delegate = self
 
-        let  url =  NSURL(string:"http://yourUrl.com")
+        let  url =  NSURL(string:"http://79.170.40.234/buskerooapp-test.com/app/api/get-buskers/")
         let parameters = ["Latitude": "bar"]
 
 
@@ -85,6 +85,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
 //            print(self.newArray[indexPath.row])
         
         let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NextView") as! JSONClassVC
+        print([AnyObject](arrayLiteral:jsonArray![indexPath.row]))
             secondViewController.preArrayValue = [AnyObject](arrayLiteral:jsonArray![indexPath.row])
         self.navigationController?.pushViewController(secondViewController, animated: true)
 

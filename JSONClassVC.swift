@@ -11,24 +11,20 @@ import Alamofire
 
 class JSONClassVC: UIViewController {
 
-    var jsonArray:NSMutableArray?
+    var preArrayValue = [AnyObject]()
+    
     var newArray: Array<String> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Alamofire.request(.GET, "https://httpbin.org/get").responseJSON { response in
-            print(response.result.value)
-            if let JSON = response.result.value {
-                
-               print(JSON)
-
-            
-        }
-        
+//      print(preArrayValue)
+        let response = preArrayValue as NSArray
+        print(response[1])
+        print(response.valueForKey("buskerName") as? NSString)
+//           let string = response["buskerName"] as? [[String: AnyObject]]
+//         print(<#T##items: Any...##Any#>)
     }
-
-}
 }
 
 

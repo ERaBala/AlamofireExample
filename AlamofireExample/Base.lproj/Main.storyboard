@@ -70,11 +70,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GQ3-mB-o1W" secondAttribute="bottom" constant="8" id="Ith-qY-gYn"/>
                             <constraint firstItem="077-pp-Cas" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TGs-4A-7Ze"/>
                             <constraint firstAttribute="trailing" secondItem="077-pp-Cas" secondAttribute="trailing" id="UN7-tD-MfS"/>
                             <constraint firstItem="077-pp-Cas" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xfx-kp-fDx"/>
                             <constraint firstItem="GQ3-mB-o1W" firstAttribute="centerX" secondItem="077-pp-Cas" secondAttribute="centerX" id="evG-9l-1ID"/>
-                            <constraint firstItem="GQ3-mB-o1W" firstAttribute="top" secondItem="077-pp-Cas" secondAttribute="bottom" constant="8" symbolic="YES" id="sgE-rr-3sz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YVe-wL-Oja"/>
@@ -90,7 +90,7 @@
         <!--ClassVC-->
         <scene sceneID="XKj-E7-99j">
             <objects>
-                <viewController id="U4h-Cf-lVD" customClass="JSONClassVC" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U4h-Cf-lVD" customClass="JSONClassVC" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QRa-vb-Cf2"/>
                         <viewControllerLayoutGuide type="bottom" id="KUF-1u-cYl"/>

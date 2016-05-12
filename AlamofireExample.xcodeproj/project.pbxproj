@@ -14,6 +14,7 @@
 		CE02E9021CE073190039CE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE02E9001CE073190039CE17 /* LaunchScreen.storyboard */; };
 		CE3D94241CE1ECAF006463A6 /* JSONClassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D94231CE1ECAF006463A6 /* JSONClassVC.swift */; };
 		CE4B6BA71CE3475800984B97 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B6BA61CE3475800984B97 /* TableViewCell.swift */; };
+		CE50D91D1CE4462200A70B8F /* URLSamples in Resources */ = {isa = PBXBuildFile; fileRef = CE50D91C1CE4462200A70B8F /* URLSamples */; };
 		F12CFAF06D2CFF314A770B82 /* Pods_AlamofireExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22305D16DB7CAD5258EC7C0 /* Pods_AlamofireExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		CE02E9031CE073190039CE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3D94231CE1ECAF006463A6 /* JSONClassVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONClassVC.swift; path = ../JSONClassVC.swift; sourceTree = "<group>"; };
 		CE4B6BA61CE3475800984B97 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = TableviewCell/TableViewCell.swift; sourceTree = "<group>"; };
+		CE50D91C1CE4462200A70B8F /* URLSamples */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = URLSamples; sourceTree = "<group>"; };
 		F3C09F9A040D35D1D0417D8F /* Pods-AlamofireExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireExample/Pods-AlamofireExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +57,7 @@
 		CE02E8EB1CE073190039CE17 = {
 			isa = PBXGroup;
 			children = (
+				CE50D91C1CE4462200A70B8F /* URLSamples */,
 				CE02E8F61CE073190039CE17 /* AlamofireExample */,
 				CE02E8F51CE073190039CE17 /* Products */,
 				EDD8D1D9C85A81EAB461447E /* Pods */,
@@ -157,6 +160,7 @@
 			files = (
 				CE02E9021CE073190039CE17 /* LaunchScreen.storyboard in Resources */,
 				CE02E8FF1CE073190039CE17 /* Assets.xcassets in Resources */,
+				CE50D91D1CE4462200A70B8F /* URLSamples in Resources */,
 				CE02E8FD1CE073190039CE17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

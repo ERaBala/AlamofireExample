@@ -5,8 +5,6 @@
 //  Created by User on 09/05/16.
 //  Copyright © 2016 user. All rights reserved.
 //
-//  https://api.getaddress.io/v2/uk/sw1a2aa?api-key=wG5GaiVtwkSI1CUjEeUTlw4144
-//
 
 
 import UIKit
@@ -21,7 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     var newArray: Array<String> = []
 
     lazy var data = NSMutableData()
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,13 +32,16 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
 
 
         Alamofire.request(.POST, url!, parameters: parameters, encoding:.JSON).responseJSON
-            { response in switch response.result {
+            { response in
+            switch response.result {
             case .Success(let JSON):
                 print("Success with JSON: \(JSON)")
                 
 //                let response = JSON as! NSArray
-                if let JSON = response.result.value {
+                if let JSON = response.result.value
+                {
                     self.jsonArray = JSON as? NSMutableArray
+                    
                     for item in self.jsonArray! {
                         print(item["id"]!)
                         let string = item["buskerName"]!
@@ -53,12 +54,18 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
                     
                     self.TableVieq.reloadData()
                 }
-                            case .Failure(let error):
+            case .Failure(let error):
                 print("Request failed with error: \(error)")
                 }
         }
     }
 
+    
+    
+    func numberOfSectionsInTableView(tableView: UITableView) ->Int
+    {
+    return 1
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.newArray.count
@@ -72,12 +79,19 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         return cell
     }
     
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//            print(jsonArray![indexPath.row])
+//            print(self.newArray[indexPath.row])
+        
+        let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NextView") as! JSONClassVC
+            secondViewController.preArrayValue = [AnyObject](arrayLiteral:jsonArray![indexPath.row])
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+
+    }
+    
+    
 }
 
-/*
-    http://date.jsontest.com/
- https://httpbin.org/get
-*/
 
 
-//      sliderImg (image),buskerName, location, distance, buskerinfo, buskermail ,id

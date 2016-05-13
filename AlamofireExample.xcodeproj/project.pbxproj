@@ -15,6 +15,7 @@
 		CE3D94241CE1ECAF006463A6 /* JSONClassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D94231CE1ECAF006463A6 /* JSONClassVC.swift */; };
 		CE4B6BA71CE3475800984B97 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B6BA61CE3475800984B97 /* TableViewCell.swift */; };
 		CE50D91D1CE4462200A70B8F /* URLSamples in Resources */ = {isa = PBXBuildFile; fileRef = CE50D91C1CE4462200A70B8F /* URLSamples */; };
+		CE66EF171CE59E570019743F /* GlobelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66EF161CE59E570019743F /* GlobelClass.swift */; };
 		F12CFAF06D2CFF314A770B82 /* Pods_AlamofireExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22305D16DB7CAD5258EC7C0 /* Pods_AlamofireExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		CE3D94231CE1ECAF006463A6 /* JSONClassVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONClassVC.swift; path = ../JSONClassVC.swift; sourceTree = "<group>"; };
 		CE4B6BA61CE3475800984B97 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = TableviewCell/TableViewCell.swift; sourceTree = "<group>"; };
 		CE50D91C1CE4462200A70B8F /* URLSamples */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = URLSamples; sourceTree = "<group>"; };
+		CE66EF161CE59E570019743F /* GlobelClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobelClass.swift; sourceTree = "<group>"; };
 		F3C09F9A040D35D1D0417D8F /* Pods-AlamofireExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireExample/Pods-AlamofireExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 		CE02E8EB1CE073190039CE17 = {
 			isa = PBXGroup;
 			children = (
+				CE66EF161CE59E570019743F /* GlobelClass.swift */,
 				CE50D91C1CE4462200A70B8F /* URLSamples */,
 				CE02E8F61CE073190039CE17 /* AlamofireExample */,
 				CE02E8F51CE073190039CE17 /* Products */,
@@ -223,6 +226,7 @@
 				CE02E8FA1CE073190039CE17 /* ViewController.swift in Sources */,
 				CE4B6BA71CE3475800984B97 /* TableViewCell.swift in Sources */,
 				CE3D94241CE1ECAF006463A6 /* JSONClassVC.swift in Sources */,
+				CE66EF171CE59E570019743F /* GlobelClass.swift in Sources */,
 				CE02E8F81CE073190039CE17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

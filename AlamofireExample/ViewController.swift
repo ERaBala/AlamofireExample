@@ -81,12 +81,12 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//            print(jsonArray![indexPath.row])
-//            print(self.newArray[indexPath.row])
-        
+/*          print(jsonArray![indexPath.row])
+            print(self.newArray[indexPath.row])
+*/
         let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NextView") as! JSONClassVC
         print([AnyObject](arrayLiteral:jsonArray![indexPath.row]))
-            secondViewController.preArrayValue = [AnyObject](arrayLiteral:jsonArray![indexPath.row])
+            secondViewController.preArrayValue = self.jsonArray![indexPath.row] as? NSMutableDictionary
         self.navigationController?.pushViewController(secondViewController, animated: true)
 
     }

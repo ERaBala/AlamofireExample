@@ -6,19 +6,19 @@ This one Alamofire pod Example Program..
 must add in info.plist :
 
 ```swift
-<dict>
-<key>NSAllowsArbitraryLoads</key>
-<true/>
-<key>NSExceptionDomains</key>
-<dict>
-<key>domain.com</key>
-<dict>
-<key>NSExceptionAllowsInsecureHTTPLoads</key>
-<true/>
-<key>NSIncludesSubdomains</key>
-<true/>
-</dict>
-</dict>
-</dict>
-</plist>
+<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>domain.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 ```

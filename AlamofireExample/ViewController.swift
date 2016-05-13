@@ -27,8 +27,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         self.TableVieq.dataSource = self
         self.TableVieq.delegate = self
 
-        let  url =  NSURL(string:"http://79.170.40.234/buskerooapp-test.com/app/api/get-buskers/")
-        let parameters = ["Latitude": "bar"]
+        let  url =  NSURL(string:"http://URl.php")
+        let parameters = ["party_id":"1"]
 
 
         Alamofire.request(.POST, url!, parameters: parameters, encoding:.JSON).responseJSON

@@ -1,7 +1,8 @@
 
 # AlamofireExample
 This one Alamofire pod Example Program..
-[![Platform](https://img.shields.io/cocoapods/p/AlamofireOauth2.svg?style=flat)]
+
+![Platform](https://img.shields.io/cocoapods/p/AlamofireOauth2.svg?style=flat)
 
 ### MUST ADD
 must add in info.plist :
